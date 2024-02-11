@@ -1,0 +1,146 @@
+<!--Sara Reyes Grao-->
+<!--Práctica 2 Bootstrap-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica 2 Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    
+    <div class="container bg-light">
+      <!--HEADER-->
+      <div class="btn-group d-flex d-lg-flex d-sm-block justify-content-between bg-white" role="group">
+        <div class="align-self-center">
+          <h6 class="ms-2 me-3 d-inline">Sara Reyes Grao</h6>
+          <p class="align-self-center d-inline">Desarrolladora Web</p>
+        </div>
+       <div class="d-flex text-center text-white">
+        <div class="bg-primary p-2">
+          <p>Portafolio</p>
+          <img src="img/bag.svg">
+        </div>
+        <div class="bg-info p-2">
+          <p>Acerca de</p>
+          <img src="img/person.svg">
+        </div>  
+        <div class="bg-primary p-2">
+          <p>Contacto</p>
+          <img src="img/letter.svg">
+        </div>
+       </div>
+      </div>
+      <!--CAROUSEL-->
+      <div id="carouselImagenes" class="carousel slide mb-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselImagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImagenes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselImagenes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="bg-white border-top border-primary border-3 p-4">
+        <h3 class="text-center text-info mb-5">Portafolio</h3>
+        <div class="row">
+          <!--FILA 1-->
+          <div class="col-4 mb-3">
+            <img class="img-fluid" src="img/img-1.jpg" alt="img-1">
+          </div>
+          <div class="col-8 mb-3">
+            <img class="img-fluid h-100" src="img/img-2.jpg" alt="img-2">
+          </div>
+           <!--FILA 2-->
+           <div class="col-8 mb-3">
+            <img class="img-fluid h-100" src="img/img-3.jpg" alt="img-3">
+          </div>
+          <div class="col-4 mb-3">
+            <img class="img-fluid" src="img/img-4.jpg" alt="img-4">
+          </div>
+           <!--FILA 3-->
+           <div class="col-4">
+            <img class="img-fluid" src="img/img-5.jpg" alt="img-5">
+          </div>
+          <div class="col-4">
+            <img class="img-fluid" src="img/img-6.jpg" alt="img-6">
+          </div>
+          <div class="col-4">
+            <img class="img-fluid" src="img/img-7.jpg" alt="img-7">
+          </div>
+        </div>
+      </div> 
+          <!--CURRICULUM-->
+          <div class="row p-3 mb-5 d-lg-flex d-sm-block">
+            <figure class="col-4 figure align-self-center text-center">
+              <img src="img/foto.jpg" width="40%" class="figure-img rounded-circle" alt="imagen">
+              <figcaption class="figure-caption text-center">Carlos Arturo</figcaption>
+            </figure>
+            <div class="col-8">
+              <h3 class="text-primary">Acerca de</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolorum quos tempore aliquam aspernatur illo expedita in, enim accusantium perspiciatis dicta totam sit velit suscipit eveniet quas, tempora exercitationem eligendi?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia ipsa fuga amet natus dolore quibusdam, quas facere minus. Impedit, modi odio ea numquam nobis explicabo. Alias, officiis. Cumque, consequuntur.</p>
+              <h6 class="text-primary">HTML</h6>
+              <div class="progress">
+              <div class="progress-bar" style="width: 95%">95%</div>
+              </div>
+              <h6 class="text-primary">CSS</h6>
+              <div class="progress">
+              <div class="progress-bar" style="width: 100%">100%</div>
+              </div>
+              <h6 class="text-primary">JS</h6>
+              <div class="progress">
+              <div class="progress-bar" style="width: 85%">85%</div>
+              </div>
+           </div>
+          </div>
+          <!--FORMULARIO-->
+          <form class="row border-top border-primary p-5">
+            <h3 class="text-center text-primary mb-5">CONTACTO</h3>
+            <div class="d-lg-flex d-sm-block mb-3 gap-2">
+              <div class="form-group col-5 mx-auto">
+                <input type="nombre" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Nombre">
+              </div>
+              <div class="form-group col-5 mx-auto">
+                <input type="correo" class="form-control" id="correo" placeholder="Correo">
+              </div>
+            </div>
+            <div class="mb-3 col-lg-11 col-sm-6 mx-auto">
+              <textarea class="form-control" id="comentario"placeholder="Correo" rows="4"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="enviar" class="btn btn-primary ps-4 pe-4">Enviar</button>
+            </div>
+          </form>
+          <!--SOCIAL MEDIA-->
+          <div class="d-flex justify-content-center mt-5 mb-5 gap-4">   
+            <img src="img/facebook.svg" width="5%">
+            <img src="img/instagram.svg" width="5%">
+            <img src="img/twitter.svg" width="5%">
+          </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
